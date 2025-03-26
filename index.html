@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numerology Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Numerology Calculator</h1>
+
+    <!-- Name Calculation -->
+    <div class="section">
+      <h2>Name Calculation</h2>
+      <input type="text" id="nameInput" placeholder="Enter Full Name">
+      <button onclick="calculateName()">Calculate</button>
+      <div id="nameResult"></div>
+    </div>
+
+    <!-- Date of Birth Calculation -->
+    <div class="section">
+      <h2>Date of Birth Calculation</h2>
+      <input type="date" id="dobInput">
+      <label for="gender">Gender:</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <button onclick="calculateNumbers()">Calculate</button>
+      <div id="dobResult"></div>
+    </div>
+
+    <!-- Lo Shu Grid -->
+    <div class="section">
+      <h2>Lo Shu Grid</h2>
+      <button onclick="generateLoShuGrid()">Generate Grid</button>
+      <div id="loShuGrid"></div>
+      <div id="missingNumbers"></div>
+    </div>
+
+    <!-- Mobile Number & Account Number Calculation -->
+    <div class="section">
+      <h2>Mobile & Account Number Total</h2>
+      <input type="text" id="mobileInput" placeholder="Enter Mobile Number">
+      <input type="text" id="accountInput" placeholder="Enter Account Number">
+      <button onclick="calculateMobileAccount()">Calculate</button>
+      <div id="numberResult"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
